@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        //assignment operators
+        let x = 2 + 3;
+        x+=10  //x=x+10;
+        x-=4   //x=x*4;
+
+        //Incrementing Operators
+        y=10; 
+        y++   //y=10+1;
+        console.log(y);
+
+        //Decision making statements
+        const age=15;
+        if(age>18){
+            console.log('sarah can drive this car');
+        }
+
+        //switch statements
+
+        const fruit="Apple"
+
+        switch(fruit){
+            case "Orange":
+                console.log("These are Oranges");
+                break;
+            case "Mango":
+                console.log("These are Mangoes");
+                break;
+            case "Apple":
+                console.log("These are Apples");
+                break;
+            default:
+                console.log("Not a valid day");
+        }
+
+        //function defination:
+        function logger(){
+            console.log("This is an logger information");
+        }
+
+        //function call
+        console.log(logger);
+
+        const retirement=(birthyear, firstname) =>{
+            const age= 2024-birthyear;
+            const retirementage= 60-age;
+
+            return `${firstname} is having these many ${retirementage} years left`;
+        }
+
+        const retire=retirement(1982,'pruthvi');
+        console.log(retire);
+
+
+    </script>
+</body>
+</html>

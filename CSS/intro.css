@@ -1,0 +1,26 @@
+.box1{
+
+    background-color: rgb(234, 214, 119);
+    border: 2px solid black;
+    width:400px;
+    margin:80px auto;
+    padding:15px;
+    border-radius:14px;
+}
+
+.box2{
+    color:rgb(0, 0, 0);
+    padding:15px;
+}
+
+.img{
+    border:1px solid lightgray;
+    margin:5px 100px;
+    width:200px;
+    height:175px;
+    border-radius:150px;
+}
+
+.center{
+    text-align: center;
+}

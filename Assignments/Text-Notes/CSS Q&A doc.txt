@@ -1,0 +1,38 @@
+Q) What are the advantages and disadvantages of each styling method (inline, embedded, external)?
+When would you use each method?
+
+Answer: 
+Inline: Inline styles where we write the CSS code within the tagline in HTML. Inline styles increase the HTML file size, which can affect the page load time.
+Internal: Internal styles are part of the HTML file, which increases the file size.
+External: External styles are in a separate file, which reduces the HTML file size and can be cached for faster page loads.
+
+
+
+Q) Explain different CSS3 selectors with examples.
+
+Answer: In CSS many different selectors are used for designing the website, they are mainly classified into 3 types they are:
+
+* Class selector 
+* Id  selector
+* element Selector
+
+Class selector: class selector is used to select all elements that belong to a particular class attribute. To select the elements with a particular class, for defining class we use (.)
+
+Id selector:The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element! 
+
+element selector:The element selector in CSS is used to select elements inside the elements. It combines two selectors such that elements matched by the second selector are selected if they have an ancestor element matching the first selector.
+
+
+
+
+Q)Explain the CSS Box Model and demonstrate its components with code.
+
+The CSS Box Model describes how elements on a webpage are structured and how their dimensions are calculated. It has four main components: content, padding, border, and margin.
+
+Content: This is the actual content of the element, such as text, images, or other media.
+
+Padding: The padding is the space between the content and the border. It helps to create space around the content, separating it from the border.
+
+Border: The border surrounds the padding and content and defines the boundary of the element.
+
+Margin: The margin is the space outside the border, which separates the element from other elements on the page.

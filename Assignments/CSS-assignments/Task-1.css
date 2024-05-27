@@ -1,0 +1,11 @@
+.container{
+    width:800px;
+    border:1px solid lightgray;
+    border-radius: 14px;
+}
+
+header{
+    text-align:center;
+    background-color:whitesmoke;
+}
+

@@ -1,0 +1,28 @@
+
+.container{
+    border:1px solid lightgrey;
+    border-radius: 14px;
+    width:600px;
+    height:400px;
+    margin:100px auto; 
+}
+header{
+    border-radius: 14px;
+    padding:12px;
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    color:rgb(157, 0, 157);
+    text-decoration: underline;
+}
+
+h3{
+    color:brown;
+    text-decoration: underline;
+}
+.content{
+    border-radius: 14px;
+    padding:20px;
+    background-color: blanchedalmond;
+}
