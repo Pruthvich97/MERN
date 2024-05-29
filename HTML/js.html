@@ -9,59 +9,450 @@
     <script>
 
 
-        //assignment operators
-        let x = 2 + 3;
-        x+=10  //x=x+10;
-        x-=4   //x=x*4;
 
-        //Incrementing Operators
-        y=10; 
-        y++   //y=10+1;
-        console.log(y);
 
-        //Decision making statements
-        const age=15;
-        if(age>18){
-            console.log('sarah can drive this car');
+        'use strict';
+
+////////////////
+// Activating Strict Mode
+// let checkStatus;
+// checkStatus = true;
+// console.log(checkStatus);
+// let hasDriversLicense = true;
+// let passTest = false;
+
+// if (!passTest) { 
+//     hasDriversLicense = true;
+//     console.log(hasDriversLicense);
+// }
+
+// if (hasDriversLicense) console.log('I can drive');
+
+
+// const interface1 = "Audio";
+// const private1 = 655;
+
+// console.log(interface1);
+
+
+////////////////
+// Functions
+
+// Function Definition
+// function logger() {
+//     console.log("this is a logger information");
+// }
+
+// // Function Call / Running / Invoking
+// logger();
+
+// // Functions with Arguments
+// function fruitProcessor(apples, oranges) {
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const orangeJuice = fruitProcessor(0, 9);
+// console.log(orangeJuice);
+
+////////////////
+// Function Declaration vs Expressions
+
+// Function Declaration
+// function calcAge(birthYear) {
+//     // Function Expression
+//     return 2037 - birthYear;
+// }
+
+// const age1 = calcAge(1991);
+// console.log(age1);
+
+
+////////////////
+// Arrow Functions
+// const calcAge3 = birthYear => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+
+// const yearsUntillRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+
+//     return `${firstName} retires in ${retirement} years`;
+// }
+
+// console.log(yearsUntillRetirement(1991, 'Jonas'));
+// console.log(yearsUntillRetirement(1980, 'Smith'));
+
+
+////////////////
+// Functions Calling Other Functions
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangesPieces = cutFruitPieces(oranges);
+
+//     const juice = `Juice with ${applePieces} piece of apples and ${orangesPieces} piece of oranges`;
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2, 3));
+
+
+////////////////
+// Reviewing Functions
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+
+//     if (retirement > 0) {
+//         // console.log(`${firstName} retires in ${retirement} years`);
+//         return `${firstName} retires in ${retirement} years`;
+//     } else {
+//         // console.log(`${firstName} has already retired`);
+//         return `${firstName} has already retired`;
+//     }
+// }
+
+
+// console.log(yearsUntilRetirement(1991, 'James'));
+// console.log(yearsUntilRetirement(1950, 'Mike'));
+// console.log(yearsUntilRetirement(2047, 'Juke'));
+
+
+////////////////
+// Introduction To Arrays
+// const friend1 = "Micheal";
+// const friend2 = "Steven";
+// const friend3 = "Peter";
+
+// const friends = ["Micheal", "Steven", "Peter"];
+// console.log(friends);
+// console.log(friends[2]);
+
+
+// const years = new Array(5262, 8473, 6346, 3676, 5526);
+// console.log(years);
+// console.log(years[4]);
+
+// console.log(friends.length);
+// console.log(friends.length - 1);
+
+// friends[2] = "Jay";
+// console.log(friends);
+
+// const firstName = "Jonas";
+// const jonas = [firstName, firstName , 2037 - 1991, "Teacher", friends];
+// console.log(jonas[3]);
+
+// const calcAge = (birthYear) => {
+//     return 6037 - birthYear;
+// }
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[2]);
+// const age3 = calcAge(years[3]);
+
+// console.log(age1, age2, age3);
+
+
+////////////////
+// Basic Array Operations (Methods)
+// const friends = ["Micheal", "Steven", "Peter"];
+// console.log(friends);
+
+// // Add Elements
+// const newFriends = friends.push("Jay");
+// console.log(newFriends);
+// console.log(friends);
+
+// console.log(friends.unshift("John"));
+// console.log(friends);
+
+// // Remove Elements
+// console.log(friends.pop());
+// console.log(friends);
+
+// console.log(friends.shift());
+// console.log(friends);
+
+// console.log(friends.indexOf("teven"));
+// console.log(friends.includes("Seven"));
+
+// Anonymous Function
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.5 : bill * 0.2;
+// }
+
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills);
+// console.log(tips);
+// console.log(totals);
+
+////////////////
+// Introduction to Objects
+// const jonasArray = [
+//     'Jonas', 
+//     'Williams', 
+//     2037 - 1991, 
+//     'Teacher', 
+//     [
+//         'Micheal', 
+//         'Peter', 
+//         'Steven'
+//     ]
+// ];
+// console.log(jonasArray);
+
+// const jonasObject = {
+//     // properties of an Object
+//     firstName: 'Jonas', 
+//     lastName: 'Williams', 
+//     age: 2037 - 1991, 
+//     job: 'Teacher', 
+//     friends: [
+//         'Micheal', 
+//         'Peter', 
+//         'Steven'
+//     ]
+// };
+// console.log(jonasObject);
+
+// // Access Object - Dot (.) vs Bracket Notation []
+// console.log(jonasObject.firstName);
+// console.log(jonasObject['friends']);
+// console.log(jonasObject['firstName']);
+
+// const nameKey = 'Name';
+// console.log(jonasObject['first' + nameKey]);
+// console.log(jonasObject['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know about jonas? choose among firstName, lastName, age, job and friends');
+// if(jonasObject[interestedIn]) {
+//     console.log(jonasObject[interestedIn]);
+// } else {
+//     console.log('Wrong request! Choose among firstName, lastName, age, job and friends');
+// }
+
+// // Declaring the New Property to Object
+// jonasObject.location = 'Deutsch';
+// jonasObject['twitterUsername'] = '@jonas';
+
+// Object Methods
+// const steven = {
+// //  properties of an Object     
+//     firstName: 'Steven', 
+//     lastName: 'Williams', 
+//     birthYear: 1991, 
+//     job: 'Teacher', 
+//     friends: ['Micheal', 'Peter', 'Steven'], 
+//     hasDriversLicense: true, 
+
+// //  methods of an Object
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     }, 
+
+//     getSummary: function () {
+//         return `${this.firstName} ${this.lastName} is a ${this.calcAge()} year old, ${this.job} and has group of friens: ${this.friends}, hasDriversLicense: ${this.hasDriversLicense ? 'Yes' : 'No'}`;
+//     }
+
+
+// };
+
+// console.log(steven.calcAge());
+// console.log(steven.getSummary());
+
+
+// const Mark = {
+//     fullName: 'Mark Miller', 
+//     mass: 78, 
+//     height: 1.69, 
+
+//     calcBMI: function () {
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }, 
+// };
+
+
+// const John = {
+//     fullName: 'John Smith', 
+//     mass: 92, 
+//     height: 1.95, 
+
+//     calcBMI: function () {
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// }
+
+// console.log(`Mark BMI: ${Mark.calcBMI()}, John BMI: ${John.calcBMI()}`);
+
+// if ( Mark.calcBMI() > John.calcBMI() ) {
+//     console.log(`${Mark.calcBMI()} is higher than ${John.calcBMI()}`);
+// } else {
+//     console.log(`${Mark.calcBMI()} is lower than ${John.calcBMI()}`);
+// }
+
+
+////////////////
+// Iteration: the for Loop
+// console.log("Lifting weights repetition 1");
+// console.log("Lifting weights repetition 2");
+// console.log("Lifting weights repetition 3");
+// console.log("Lifting weights repetition 4");
+// console.log("Lifting weights repetition 5");
+// console.log("Lifting weights repetition 6");
+
+// // for loop
+// for (let rep = 1; rep <= 30; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+////////////////
+// Looping Arrays, Break and Continue
+const jonas = [
+    'Jonas', 
+    'Williams', 
+    2037 - 1991, 
+    'Teacher', 
+    ['Micheal', 'Peter', 'Steven'], 
+    true
+];
+
+const types = [];
+// console.log(jonas[0]);
+// console.log(jonas[1]);
+
+// for( let i = 0; i < jonas.length; i++) {
+//     // console.log(jonas[i], typeof jonas[i])
+
+//     // Filling types array
+//     // types[i] = typeof jonas[i];
+//     types.push(typeof jonas[i]);
+// }
+
+// console.log(types);
+
+
+// const years = [1991, 2007, 2018, 2024];
+// const ages = [];
+
+// for ( let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+
+// console.log(ages);
+
+
+// continue and break
+// console.log("---- ONLY STRINGS -----");
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] === 'string') continue;
+//     console.log(jonas[i] + " - " + typeof jonas[i]);
+// }
+
+// console.log("---- BREAK WITH NUMBER ----");
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] === 'number') break;
+//     console.log(jonas[i] + " - " + typeof jonas[i]);
+// }
+
+////////////////
+// Looping Backwards
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//     console.log(i, jonas[i]);
+// }
+
+// // Loops in Loops
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`---- Starting excercise ${exercise} ----`);
+
+//     for(let rep = 1; rep < 6; rep++) {
+//         console.log(`Excercise ${exercise}: Lifting weight repetition ${rep}`);
+//     }
+// }
+
+
+////////////////
+// while
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repetition ${rep}`);
+//     rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while(dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('loop is about to end...');
+// }
+
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+
+const bills = [22, 295, 478, 124, 43, 29, 379, 168];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+
+////console.log(bills, tips, totals);
+
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    return (sum/arr.length);
+}
+
+//console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));;
+
+
+const pruthvii=[
+            'pruthvi',
+            'Chinthala Pruthvi Raj',
+            1997,
+           'Software Engineer',
+            ['Anil', 'Kavya','Lokesh'],
+           true,
+]
+
+        for(let i=0; i< pruthvii.length; i++){
+            if(typeof(pruthvii[i])==='number'){
+            console.log(`The number ` + pruthvii[i]+ ` is at ` + i + ` position`);
         }
-
-        //switch statements
-
-        const fruit="Apple"
-
-        switch(fruit){
-            case "Orange":
-                console.log("These are Oranges");
-                break;
-            case "Mango":
-                console.log("These are Mangoes");
-                break;
-            case "Apple":
-                console.log("These are Apples");
-                break;
-            default:
-                console.log("Not a valid day");
-        }
-
-        //function defination:
-        function logger(){
-            console.log("This is an logger information");
-        }
-
-        //function call
-        console.log(logger);
-
-        const retirement=(birthyear, firstname) =>{
-            const age= 2024-birthyear;
-            const retirementage= 60-age;
-
-            return `${firstname} is having these many ${retirementage} years left`;
-        }
-
-        const retire=retirement(1982,'pruthvi');
-        console.log(retire);
+    }
 
 
-    </script>
+ </script>
 </body>
 </html>

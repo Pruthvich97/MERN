@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+'use strict';
+
+    //Data Types and their values printing
+        let name='pruthvi';
+        console.log(`name is ${name},`+` type of name is `+ typeof name);
+
+     
+        const details=['pruthvi', 45,'Engineer',38.12,true,]
+        for (let i=0; i<details.length; i++){
+            console.log(details[i], typeof details[i]);
+        }
+
+    //Integer to Float conversion
+       let fvalue = 44;
+       let nvalue=fvalue.toFixed(1)
+       console.log('Float value: ',nvalue);
+
+    //Float to Integer conversion
+       let num1=48.6;
+       let wholeNum1=Math.round(num1);
+       console.log('Integer number: ',wholeNum1);    
+
+    //string to integer conversion
+        //BEFORE
+        let stringNum='45';
+        console.log(stringNum, typeof(stringNum));
+        
+        //AFTER
+        let IntNum=Number(stringNum);
+        console.log(IntNum, typeof(IntNum));
+
+        ///Adding two Integers
+        let A=20;
+        let B=40;
+        console.log(A+B);
+
+        //concating of two strings
+        const firstName='Pruthvi';
+        const secondName='Raj';
+        console.log(firstName + ' '+ secondName);
+        console.log('pruthvi'+' '+'Raj');
+
+
+        //Arrays and their Operations and manipulations
+        const Boys=['pruthvi','kushal',['Anil','Ravi','Lokesh'],'vishal'];
+        console.log(Boys);
+        console.log(Boys[1]);
+        console.log(Boys[2]);
+        console.log(Boys[2][1]);
+
+        Boys[2][1]='Anand';
+        console.log(Boys[2][1]);
+
+        console.log(Boys.pop());
+        Boys.push('Naveen');
+
+        console.log(Boys);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script</h1>
+
+<script>
+
+    
+        //assignment operators
+        /////////////////
+        let x = 2 + 3;
+        x+=10  //x=x+10;
+        x-=4   //x=x*4;
+
+        //Incrementing Operators
+        y=10; 
+        y++   //y=10+1;
+        console.log(y);
+
+        //Decision making statements
+        const age=15;
+        if(age>18){
+            console.log('sarah can drive this car');
+        }
+
+        //switch statements
+
+        const fruit="Apple"
+
+        switch(fruit){
+            case "Orange":
+                console.log("These are Oranges");
+                break;
+            case "Mango":
+                console.log("These are Mangoes");
+                break;
+            case "Apple":
+                console.log("These are Apples");
+                break;
+            default:
+                console.log("Not a valid day");
+        }
+
+        //function defination:
+        function logger(){
+            console.log("This is an logger information");
+        }
+
+        //function call
+        console.log(logger());
+
+        const retirement=(birthyear, firstname) =>{
+            const age= 2024-birthyear;
+            const retirementage= 60 - age;
+
+            return `${firstname} is having these many ${retirementage} years left`;
+        }
+
+        const retire=retirement(1982,'pruthvi');
+        console.log(retire);
+
+
+        const mark={
+            height:1.95,
+            mass:92,
+            
+            calcBMI: function (){
+                this.bmi = this.mass/this.height **2;
+                return this.bmi
+            }
+        }
+
+        console.log(mark.calcBMI());
+        //////////////////////////
+
+        const names=['pruthvi', 'Sai', 'Kushal','yeshwanth', 'Anil']
+        console.log(names.length);
+        
+        for(let i=0; i<names.length;i++){
+            console.log(names[i]);
+    }
+
+
+
+    //////Objects declaration
+
+       
+
+
+        let num=20;
+        let string1 = String(num);
+        console.log(string1, typeof string1);
+
+
+        firstname='Pruthvi';
+        lastname='Raj'
+
+        console.log( 'Pruthvi' +' ' +'Raj' );
+        console.log( `${firstname} ${lastname}` );
+
+const Tax=function(price){
+return price >=50 && price <=300 ? price * 0.15:price * 0.2;
+}
+
+const prices=[50,44,200,315,250,345,44,590];
+const GST=[];
+const Total=[]
+
+for(let i=0;i<prices.length;i++){
+    let gst=Tax(prices[i]);
+    GST.push(gst);
+    Total.push(prices[i]+gst)
+}
+
+console.log(prices,GST,Total);
+
+
+let rep=10;
+while (rep >= 0){
+    console.log(` More ${rep} reps to go!`);
+    rep--;
+}
+
+const calculations =function(A,B){
+    const add=(A+B);
+    const sub=(A-B);
+    const Div=(A/B);
+    const Mul=(A*B);
+    const values= `Addition:${add}, subtraction: ${sub}, Division: ${Div}, Multiply:${Mul}`;
+    return values;
+}
+
+const results=calculations(5,3);
+console.log(results); 
+
+const pruthvi={
+            Name:'pruthvi',
+            FullName:'Chinthala Pruthvi Raj',
+            birthyear:1997,
+            profession: 'Software Engineer',
+            friends:['Anil', 'Kavya','Lokesh'],
+            hasLicence:true,
+
+            calcAge: function(){
+                this.age= 2024-this.birthyear;
+                return this.age;
+            },
+
+            retirementAge: function(){
+                this.retirement= 2045-this.birthyear;
+                let retire=this.retirement;
+                return `will retire in ${retire} years`;
+            } 
+        }
+
+        console.log(pruthvi.retirementAge());
+       // console.log(pruthvi.calcAge());
+        //console.log(pruthvi.friends);
+
+
+        console.log("ONLY TILL NUMBER")
+
+
+        for (let i = 0; i < pruthvii.length; i++) {
+            console.log(pruthvii[i]);
+         }
+
+         console.log('Hey Pruthvi')
+</script>
+</body>
+</html>
