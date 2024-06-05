@@ -6,12 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-
-
-
-
-        'use strict';
+<scrip>
 
 ////////////////
 // Activating Strict Mode
@@ -405,54 +400,57 @@ const types = [];
 // }
 
 
-const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
 
 
-const bills = [22, 295, 478, 124, 43, 29, 379, 168];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 478, 124, 43, 29, 379, 168];
+// const tips = [];
+// const totals = [];
 
-for (let i = 0; i < bills.length; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(tip + bills[i]);
-}
+// for (let i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
 
-////console.log(bills, tips, totals);
-
-
-const calcAverage = function (arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-
-    return (sum/arr.length);
-}
-
-//console.log(calcAverage([2, 3, 7]));
-console.log(calcAverage(totals));
-console.log(calcAverage(tips));;
+// ////console.log(bills, tips, totals);
 
 
-const pruthvii=[
-            'pruthvi',
-            'Chinthala Pruthvi Raj',
-            1997,
-           'Software Engineer',
-            ['Anil', 'Kavya','Lokesh'],
-           true,
-]
+// const calcAverage = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
 
-        for(let i=0; i< pruthvii.length; i++){
-            if(typeof(pruthvii[i])==='number'){
-            console.log(`The number ` + pruthvii[i]+ ` is at ` + i + ` position`);
-        }
-    }
+//     return (sum/arr.length);
+// }
+
+// //console.log(calcAverage([2, 3, 7]));
+// console.log(calcAverage(totals));
+// console.log(calcAverage(tips));;
 
 
- </script>
+// const pruthvii=[
+//             'pruthvi',
+//             'Chinthala Pruthvi Raj',
+//             1997,
+//            'Software Engineer',
+//             ['Anil', 'Kavya','Lokesh'],
+//            true,
+// ]
+
+//         for(let i=0; i< pruthvii.length; i++){
+//             if(typeof(pruthvii[i])==='number'){
+//             console.log(`The number ` + pruthvii[i]+ ` is at ` + i + ` position`);
+//         }
+//     }
+
+//////
+
+
+ </scrip>
+
 </body>
 </html>
