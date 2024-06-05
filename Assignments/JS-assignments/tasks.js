@@ -49,5 +49,5 @@ function displayGreeting() {
     document.write("<p>Hello, " + name + "! " + greeting + "!</p>");
 }
 
-//Calling the  
+//while loading the window the function is also called
 window.onload = displayGreeting;
