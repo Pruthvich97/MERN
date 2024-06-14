@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* input,th,td{
+            padding:10px;
+        } */
+    </style>
+</head>
+<body>
+    <p>### Question 3: Table with Colspan and Rowspan
+        Create a table that displays sales data for a company. The table should have the following structure:
+        - The first row should have three columns: "Region", "Product", "Sales".
+        - The "Region" column should span two rows.
+        - The "Product" column should span three columns: "Q1", "Q2", "Q3".
+        - The "Sales" column should have normal cells for each product and quarter.</p>
+        <br>
+    <h1>Complex Table</h1>
+    <table class="table1" border="1">
+        <tr>
+            <th rowspan="2">Region</th>
+            <th colspan="3">Product</th>
+            <th>Sales</th>
+        </tr>
+        <tr>
+           <td>Q1</td>
+           <td>Q2</td>
+           <td>Q3</td>
+           <th>Total Sales</th>
+        </tr>
+        <tr>
+            <td>North</td>
+            <td>12893</td>
+            <td>17245</td>
+            <td>15289</td>
+            <td>43455</td>
+        </tr>
+        <tr>
+            <td>East</td>
+            <td>23145</td>
+            <td>12456</td>
+            <td>9653</td>
+            <td>34572</td>
+        </tr>
+        <tr>
+            <td>West</td>
+            <td>21245</td>
+            <td>2456</td>
+            <td>12467</td>
+            <td>48352</td>
+        </tr>
+        <tr>
+            <td>South</td>
+            <td>2945</td>
+            <td>13478</td>
+            <td>7652</td>
+            <td>23456</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <p>### Question 7: Table with Form Elements
+        Create a table that includes form elements for a product order form. The table should have columns for "Product Name", "Quantity", "Price", and "Total". Each row should contain input fields for quantity and total, with the total being calculated based on the quantity and price. Include at least 3 rows of products.</p>
+        <br>
+    <h1>Table for products</h1>
+    <table class="table2" border="1">
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price(RS.)</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td><input type="number" placeholder="Quantity" value="product"></td>
+            <td>40</td>
+            <td><input type="number" placeholder="Total" value="Total"></td>
+        </tr>
+
+        <tr>
+            <td>Meat</td>
+            <td><input type="number" placeholder="Quantity" value="product"></td>
+            <td>300</td>
+            <td><input type="number" placeholder="Total" value="Total"></td>
+        </tr>
+        <tr>
+            <td>Bread</td>
+            <td><input type="number" placeholder="Quantity" value="product"></td>
+            <td>60</td>
+            <td><input type="number" placeholder="Total" value="Total"></td>
+        </tr>
+    </table>
+    <br>
+
+    <p>### Question 8: Multi-language Table
+        Design a table that supports multiple languages. The table should have two rows of headers, one for English and one for French. The columns should include "Name/Nom", "Age/Âge", "City/Ville", and "Country/Pays". Include at least 5 rows of data.</p>
+    <h1>Multi Language Table</h1>    
+    <table border="1">
+        <tr>
+            <th>Languages</th>
+            <td>Name/Nom</td>
+            <td>Age/Âge</td>
+            <td>City/Ville</td>
+            <td>Country/Pays</td>
+            
+        </tr>
+        <tr>
+            <th rowspan="5">English</th>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th rowspan="5">French</th>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+            
+        
+    </table>
+</body>
+</html>

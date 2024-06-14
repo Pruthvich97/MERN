@@ -1,0 +1,43 @@
+body{
+    background-color:whitesmoke;
+}
+
+.center{
+    text-align: center;
+}
+.website{
+    padding:30px;
+    background-color: rgb(55, 237, 134);
+}
+
+.navigation{
+    padding:10px;
+    background-color:rgb(48, 78, 108);
+    height:30px;   
+}
+.navigation a{
+    padding:20px 20px;
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+    line-height:20px;
+
+}
+.main-div{
+    display:flex;
+}
+.box{
+    background-color: white;
+    width:300px;
+    border:2px solid lightgrey;
+    padding:8px;
+    border-radius:14px;
+    margin:30px;
+}
+.box-img{
+    width:100%;
+    border-radius: 8px;
+}
+.navigation a:hover{
+    color:orange;
+}

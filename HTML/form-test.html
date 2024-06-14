@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive form</title>
+    <link rel="stylesheet" href="/CSS/form-test.css">
+</head>
+<body>
+    
+    <form class="Survey-form" action="">
+        <h1>User From</h1>
+            <label for="Name">Name:</label>
+            <input class="input" type="text" name="Full Name"  placeholder="Enter your Name" value="" autofocus required><br>
+    
+            <label for="Age">Age:</label>
+            <input  class="input" type="text" name="Age" placeholder="Enter your Age" value=""   required><br>
+          
+            <label for="Email">Email:</label>
+             <input class="input" type="email" name="email" placeholder="Email" value="" required><br>
+
+            <label>Do you own a car?</label>
+             <label for="yes">Yes</label>
+             <input type="radio" id="yes" name="Car" value="yes">
+     
+             <label for="No">No</label>
+             <input type="radio" id="No" name="Car" value="No"><br><br>
+            
+            <label for="carMake">Car Make:</label>
+            <select id="carmake" name="carMake">
+            <option value="">Select your car</option>
+            <option value="Ford">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Hyundai">Ford</option>
+            </select><br><br>
+
+            <label for="carModel">Car Model:</label>
+            <input class= car-model type="text" id="carModel" name="carModel" value=""><br><br>
+           
+        
+            <label for="mydrivefrequency">How often do you drive?</label>
+            <select id="mydrivefrequency" name="mydrivefrequency">
+            <option value="">Select the frequency</option>
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Rarely">Rarely</option>
+            </select>
+            <br><br>
+
+            <label>Primary purpose of driving?</label>
+            <input type="checkbox" name="drivingPurpose" value="Work" id="drivingPurposeWork">
+            <label for="drivingPurposeWork">Work</label>
+            <input type="checkbox" name="drivingPurpose" value="Leisure" id="drivingPurposeLeisure">
+            <label for="drivingPurposeLeisure">Leisure</label>
+            <input type="checkbox" name="drivingPurpose" value="Other" id="drivingPurposeOther">
+            <label for="drivingPurposeOther">Other</label>
+            <br><br>
+
+            <button class="btn" type="submit">Submit</button>
+    </form>
+</body>
+</html>

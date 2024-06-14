@@ -1,0 +1,71 @@
+body{
+ background-image:url("/images/super_sports_cars-HD.jpg"); 
+ background-size: cover;
+}
+
+label{
+    margin-bottom: 5px;
+    font:bolder;
+    font-weight:  400px;
+}
+
+h1{
+   text-align: center;
+}
+.Survey-form{
+    /* background:linear-gradient(to right, rgb(215, 144, 144) rgb(138, 167, 205)); */
+    /* background-image:url("/images/super_sports_cars-HD.jpg"); */
+    /* background-size: cover; */
+    background:linear-gradient(to right,rgb(238, 196, 196),rgb(197, 197, 234)) ;
+    opacity: 0.8;
+    margin: 50px;
+    width:400px;
+    border:2px solid gray;
+    padding:30px;
+    border-radius:12px;
+}
+
+.input{
+    padding:10px;
+    border:1px solid black;
+    border-radius: 8px;
+    margin-top:5px;
+    margin-bottom: 10px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+#carmake{
+    padding:4px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+.car-model{
+    padding:6px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+
+#mydrivefrequency{
+    padding:5px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+
+.btn{
+    width:100%;
+    padding:10px 35px;
+    background-color: black;
+    color:white;
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: rgb(254, 134, 7);
+    color:black;
+}
+
+.Survey-form:hover{
+    
+}

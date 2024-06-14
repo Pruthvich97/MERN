@@ -1,0 +1,15 @@
+h1.first{
+    border:5px solid Blue;
+}
+h1.second{
+    border:5px dashed red;
+}
+h1.third{
+    border:5px dotted greenyellow;
+}
+
+h1.fourth{
+    border-width: 5px;
+    border-color: green;
+    border-style: dotted dashed double solid;
+}
