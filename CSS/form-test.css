@@ -66,6 +66,9 @@ h1{
     color:black;
 }
 
-.Survey-form:hover{
-    
+@media (max-width: 600px) {
+    .Survey-form {
+        margin:30px auto;
+        width: 90%;
+    }
 }

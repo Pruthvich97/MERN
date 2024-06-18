@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    margin-bottom:40px;
+}
+
+table{
+    width:60%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th,td{
+    padding:10px;
+    text-align: center;
+    border:1px solid black;   
+}
+th{
+    background-color: rgb(235, 112, 50);
+}
+
+tr:nth-last-of-type(even){
+    background-color: rgb(134, 241, 104);
+}
+tr{
+    background-color: rgb(214, 131, 249);
+}
+
+@media only screen and (max-width:760px){
+    td,tr{
+        display:block;
+    }
+
+    thead tr{
+        position: absolute;
+        top:-9999px;
+        left:-9999px;
+    }
+
+    tr{
+        margin-top: 1.5em;
+    }
+    
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    td::before {
+        content: attr(data-label);
+         display: inline-block;
+        margin-left: -100%;
+        width: 100%;
+         white-space: nowrap;
+    } 
+}

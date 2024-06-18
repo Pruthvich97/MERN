@@ -1,0 +1,26 @@
+.bg{
+    position:relative;
+    width:600px;
+    margin: 100px auto;
+}
+
+.bg-img{
+    width:100%;
+}
+
+.bg-content{
+    position: absolute;
+    left:40px;
+    bottom:30px;
+    color: rgb(255, 255, 255);
+
+}
+
+.btn{
+    background-color: white;
+    color:black;
+    border:none;
+    border-radius: 14px;
+    padding:10px 20px;
+    font-size: 14px;
+}
